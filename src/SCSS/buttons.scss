@@ -1,0 +1,46 @@
+.btn {
+    -webkit-appearance: none;
+    display: inline-block;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 25px;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &.btn-hollow {
+        border: 1px solid black;
+        background: transparent;
+
+        &:hover,
+        &:focus {
+            background: #333;
+            border: 1px solid #333;
+            color: white;
+        }
+
+        &:active {
+            background: black;
+            border: 1px solid black;
+        }
+    }
+
+    &.btn-yellow {
+        background: #e9c46a;
+        color: #735811;
+
+        &:hover,
+        &:focus {
+            background: #dfaa26;
+        }
+
+        &:active {
+            background: #bf911d;
+        }
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import Result from '../Result/result.component';
 
 const ResultsWrapper = props => {
-    if (props.data.length == 0) {
+    if (props.data.length === 0) {
         return (
             <div className="results-wrapper">
                 <div className="container">

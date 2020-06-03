@@ -6,11 +6,11 @@ const options = [
     { value: 'fund', label: 'Funds' },
     { value: 'organization', label: 'Organizations' },
     { value: 'petition', label: 'Petitions' },
-    { value: 'resource', label: 'Resources' },
+    { value: 'other', label: 'Other Resources' },
 ]
 
 export const TypeFilter = props => {
-    const value = props.value == '' ? '' : props.v
+    const value = props.value === '' ? '' : props.v
 
     return (
         <div className="filter">
