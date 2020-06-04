@@ -84,6 +84,17 @@
             }
         }
     }
+
+    p.success-message {
+        font-size: 16px;
+    }
+
+    .loader {
+        width: 25px;
+        height: 25px;
+        border: 3px solid #545454;
+        border-top: 3px solid white;
+    }
 }
 
 @media screen and (max-width: 415px) {

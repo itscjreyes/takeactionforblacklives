@@ -20,6 +20,7 @@ export const TypeFilter = props => {
                 options={options}
                 onChange={props.handleChange}
                 isSearchable={false}
+                styles={props.styles}
             />
         </div>
     )

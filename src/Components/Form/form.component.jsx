@@ -16,7 +16,8 @@ class Form extends Component {
                 link: '',
                 email: '',
             },
-            modalOpen: false
+            modalOpen: false,
+            submitting: false
         }
     }
 
@@ -40,6 +41,9 @@ class Form extends Component {
     
     handleSubmit = (e) => {
         e.preventDefault();
+        this.setState({
+            submitting: true
+        })
     
         const templateId = 'template_htxEFigV';
     
@@ -63,16 +67,17 @@ class Form extends Component {
           'gmail', templateId,
           variables
         ).then(res => {
+            this.setState({submitting: false})
           console.log('Email successfully sent!')
           const formFields = document.querySelector('.form-content-wrapper');
-          formFields.innerHTML = "<p className='success-message'>Thank you for your submission! It will be added to the list as soon as possible.</p>"
+          formFields.innerHTML = "<p class='success-message'>Thank you for your submission! It will be added to the list as soon as possible.</p>"
         })
           // Handle errors here however you like, or use a React error boundary
           .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
     }
 
     render(){
-        const { formData } = this.state;
+        const { formData, submitting } = this.state;
         const modalState = this.state.modalOpen ? 'open' : '';
 
         return (
@@ -134,7 +139,14 @@ class Form extends Component {
                                     defaultValue={formData.email}
                                     onChange={this.handleChange}
                                 />
-                                <button className="btn btn-hollow" type="submit">Submit</button>
+                                {
+                                    submitting ?
+                                    <button disabled className="btn btn-inactive">
+                                        <div className="loader"></div>
+                                    </button>
+                                    :
+                                    <button className="btn btn-hollow" type="submit">Submit</button>
+                                }
                             </form>
                         </div>
                     </div>

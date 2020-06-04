@@ -15,6 +15,7 @@ export const LocationFilter = props => (
             onChange={props.handleChange}
             isSearchable={false}
             defaultValue={{ value: 'toronto', label: 'Toronto' }}
+            styles={props.styles}
         />
     </div>
 )

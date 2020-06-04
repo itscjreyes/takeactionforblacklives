@@ -43,4 +43,10 @@
             background: #bf911d;
         }
     }
+
+    &.btn-inactive {
+        background: #333;
+        padding: 11px 25px;
+        cursor: auto;
+    }
 }
