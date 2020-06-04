@@ -2,6 +2,10 @@ body {
     background: $white;
 }
 
+.app {
+    overflow-x: hidden;
+}
+
 .container {
     padding: 60px 6%;
     max-width: 1400px;

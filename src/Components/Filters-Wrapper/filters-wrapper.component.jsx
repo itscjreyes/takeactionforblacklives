@@ -5,18 +5,22 @@ import { TypeFilter } from '../Filters/filter.type.component';
 const customStyles = {
     control: (provided, state) => ({
         ...provided,
-        padding: '5px 5px 5px 10px',
-        border: state.isFocused ? '1px solid black' : '1px solid #c8c8c8',
-        '&:hover': '1px solid #c8c8c8',
+        padding: '8px 5px 8px 10px',
+        borderRadius: '30px',
+        border: state.isFocused ? '1px solid #1f1f1f' : '1px solid #c8c8c8',
+        cursor: 'pointer',
         outline: '0 !important'
     }),
     option: (provided, state) => ({
         ...provided,
         color: state.isSelected || state.isFocused ? 'black' : '#666666',
         background: state.isSelected || state.isFocused ? '#e8e8e8' : 'transparent',
-        padding: '10px 15px',
+        padding: '15px 20px',
         width: 'auto',
-        transition: 'all 0.2s ease'
+        borderRadius: '30px',
+        margin: '0 0 10px',
+        transition: 'all 0.2s ease',
+        cursor: 'pointer'
     }),
     dropdownIndicator: (provided) => ({
         ...provided,
@@ -27,11 +31,11 @@ const customStyles = {
         ...provided,
         background: 'white',
         boxShadow: '0 5px 15px rgba(0,0,0,0.05)',
-        borderRadius: '10px'
+        borderRadius: '30px'
     }),
     menuList: (provided) => ({
         ...provided,
-        padding: '8px 0'
+        padding: '0'
     })
   }
 
