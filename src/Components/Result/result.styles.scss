@@ -1,103 +1,84 @@
 .result {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: calc(50% - 30px);
+    margin: 15px;
     color: inherit;
-    border: 1px solid #efefef;
-    border-radius: 5px;
+    background: $white;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    box-shadow: -6px -6px 26px 0 rgba(255,255,255,1), 4px 4px 18px 0 rgba(217,210,200,0.6);
     padding: 40px;
-    margin-bottom: 40px;
     text-decoration: none;
     transition: all 0.2s ease;
 
     &:hover,
     &:focus {
-        border: 1px solid lightgrey;
-        box-shadow: 0 8px 12px rgba(0,0,0,0.08);
-        transform: translateY(-3px);
+        box-shadow: -6px -6px 26px 0 rgba(255,255,255,1), 6px 6px 20px 0 rgba(217,210,200,0.9);
+        transform: translateY(-5px);
+
+        .tag {
+            opacity: 1;
+        }
     }
 
-    .content-wrapper {
-        width: 75%;
+    &:active {
+        box-shadow: inset -3px -3px 16px 0 rgba(255,255,255,0.83), inset 10px 10px 10px 0 rgba(217,210,200,0.51);
     }
 
     .title {
-        margin: 0 0 20px;
+        margin: 30px 0 10px;
     }
 
     .description {
         margin: 0;
+        font-size: 16px;
+        color: #808080;
     }
 
     .tag {
         display: inline-block;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 1px;
-        font-weight: bold;
+        font-weight: 600;
         background: grey;
         padding: 5px 10px;
         border-radius: 30px;
-        max-width: 20%;
+        color: white;
+        opacity: 0.75;
+        transition: all 0.2s ease;
 
         &.event {
-            background: #264653;
-            color: #c7dde5;
+            background: linear-gradient(45deg, #b65eba, #2e8de1);
         }
 
         &.fund {
-            background: #2a9d8f;
-            color: #d3f3ef;
+            background: linear-gradient(45deg, #ff9482, #7d77ff);
         }
 
         &.organization {
-            background: #e9c46a;
-            color: #735811;
+            background: linear-gradient(45deg, #ff9897, #f650a0);
         }
 
         &.petition {
-            background: #f4a261;
-            color: #813f09;
+            background: linear-gradient(45deg, #f869d5, #5650de);
         }
 
         &.resource {
-            background: #e76f51;
-            color: #fae1db;
+            background: linear-gradient(45deg, #6ee2f5, #6454f0);
         }
     }
 }
 
 @media screen and (max-width: 767px) {
     .result {
-        flex-direction: column-reverse;
-        padding: 20px;
-        border: 1px solid lightgrey;
-        margin-bottom: 20px;
-
-        &:hover,
-        &:focus {
-            box-shadow: none;
-            transform: none;
-        }
-
-        .content-wrapper {
-            width: 100%;
-        }
-
-        .title {
-            margin-bottom: 10px;
-        }
-
-        .description {
-            font-size: 16px;
-            color: #808080;
-        }
-
         .tag {
-            max-width: 100%;
-            margin-bottom: 30px;
             font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        &:focus {
+            transform: translateY(0);
         }
     }
 }

@@ -132,7 +132,7 @@ class Form extends Component {
                                     required
                                 />
                                 <TextField 
-                                    label="Email (optional)" 
+                                    label="Your Email (optional)" 
                                     name="email"
                                     type="email"
                                     variant="outlined"

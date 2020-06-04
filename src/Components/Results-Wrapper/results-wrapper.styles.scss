@@ -1,8 +1,9 @@
 .results-wrapper {
-    max-width: 1000px;
-    margin: auto;
-
     .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: wrap;
         padding-top: 20px;
     }
 }

@@ -18,7 +18,7 @@ const customStyles = {
         padding: '15px 20px',
         width: 'auto',
         borderRadius: '30px',
-        margin: '0 0 10px',
+        margin: '5px',
         transition: 'all 0.2s ease',
         cursor: 'pointer'
     }),
