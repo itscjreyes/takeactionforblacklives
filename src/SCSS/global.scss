@@ -1,7 +1,19 @@
+body {
+    background: $white;
+}
+
 .container {
-    padding: 80px 6%;
-    max-width: 1600px;
+    padding: 60px 6%;
+    max-width: 1400px;
     margin: auto;
+}
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
 }
 
 @media screen and (max-width: 767px) {

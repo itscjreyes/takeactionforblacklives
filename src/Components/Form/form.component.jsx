@@ -82,7 +82,7 @@ class Form extends Component {
 
         return (
             <div className="form-section">
-                <button className="btn btn-yellow" onClick={this.openModal}>Submit a Resource</button>
+                <button className="btn btn-hollow" onClick={this.openModal}>Submit a Resource</button>
                 <div className={`form-modal ${modalState}`}>
                     <div className="form-wrapper">
                         <button className="close" onClick={this.closeModal}>

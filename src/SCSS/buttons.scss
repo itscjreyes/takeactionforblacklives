@@ -2,50 +2,56 @@
     -webkit-appearance: none;
     display: inline-block;
     border: 0;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.2;
+    border-radius: 30px 30px 30px 0;
+    font-size: 14px;
+    line-height: 1;
     font-weight: bold;
+    letter-spacing: 2px;
     text-align: center;
-    padding: 13px 25px;
+    text-transform: uppercase;
+    padding: 17px 25px;
     outline: 0;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease;
 
-    &.btn-hollow {
-        border: 1px solid black;
-        background: transparent;
+    &.btn-full {
+        border: 2px solid $black;
+        background: $black;
+        color: $white;
 
         &:hover,
         &:focus {
-            background: #333;
-            border: 1px solid #333;
+            background: $black--hover;
+            border: 2px solid $black--hover;
             color: white;
         }
 
         &:active {
-            background: black;
-            border: 1px solid black;
+            background: $black--active;
+            border: 2px solid $black--active;
         }
     }
 
-    &.btn-yellow {
-        background: #e9c46a;
-        color: #735811;
+    &.btn-hollow {
+        border: 2px solid $black;
+        background: transparent;
 
         &:hover,
         &:focus {
-            background: #dfaa26;
+            background: $black--hover;
+            border: 2px solid $black--hover;
+            color: white;
         }
 
         &:active {
-            background: #bf911d;
+            background: $black--active;
+            border: 2px solid $black--active;
         }
     }
 
     &.btn-inactive {
-        background: #333;
+        background: $black--hover;
         padding: 11px 25px;
         cursor: auto;
     }
