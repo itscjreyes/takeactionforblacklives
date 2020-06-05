@@ -63,9 +63,11 @@ class App extends Component {
 
   render(){
     const {data, location, type, isLoading} = this.state;
-    let filteredData = data.slice();
+    const sortedData = data.sort((a, b) => (a.displayName > b.displayName) ? 1 : -1);
+
+    let filteredData = sortedData.slice();
     if (type) {
-      filteredData = data.filter(item =>
+      filteredData = sortedData.filter(item =>
         item.type.includes(type)
       );
     }
