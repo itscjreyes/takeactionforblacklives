@@ -12,6 +12,7 @@ class Form extends Component {
             formData: {
                 title: '',
                 description: '',
+                location: '',
                 type: '',
                 link: '',
                 email: '',
@@ -52,6 +53,7 @@ class Form extends Component {
           description: this.state.formData.description,
           type: this.state.formData.type,
           link: this.state.formData.link,
+          location: this.state.formData.location,
           email: this.state.formData.email
         })
 
@@ -59,7 +61,7 @@ class Form extends Component {
             this.setState({
                 modalOpen: false
             })
-        }, 3000);
+        }, 5000);
     }
     
     sendFeedback(templateId, variables) {
@@ -104,6 +106,13 @@ class Form extends Component {
                                     variant="outlined"
                                     name="description"
                                     defaultValue={formData.description}
+                                    onChange={this.handleChange}
+                                />
+                                <TextField 
+                                    label="Location" 
+                                    variant="outlined"
+                                    name="location"
+                                    defaultValue={formData.location}
                                     onChange={this.handleChange}
                                 />
                                 <FormControl variant="outlined">

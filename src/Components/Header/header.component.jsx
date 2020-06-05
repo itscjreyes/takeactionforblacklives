@@ -70,7 +70,7 @@ class Header extends Component {
                     />
                     <h1>Take Action&nbsp;for Black Lives</h1>
                     <div className="content-wrapper">
-                        <p>Take Action for Black Lives (TABL) is a compilation of petitions, funds, organizations, events and other resources at the city, state/province, and national level.</p>
+                        <p>This is a compilation of petitions, funds, organizations, events and other resources supporting the Black community at the city, state/provincial, and national levels.</p>
                         <div className="btn-wrapper">
                             <button className="btn btn-full" onClick={this.triggerScroll}>Explore Actions</button>
                             <Form />
