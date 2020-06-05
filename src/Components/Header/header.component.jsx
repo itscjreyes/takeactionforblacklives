@@ -68,9 +68,9 @@ class Header extends Component {
                         alt=''
                         aria-hidden="true"
                     />
-                    <h1>Take Action&nbsp;for Black Lives</h1>
-                    <div className="content-wrapper">
-                        <p>This is a compilation of petitions, funds, organizations, events and other resources supporting the Black community at the city, state/provincial, and national levels.</p>
+                    <h1 className="lazyload">Take Action&nbsp;for Black Lives</h1>
+                    <div className="content-wrapper lazyload">
+                        <p>There is a lot of information out there. This site is an attempt to compile a list of petitions, funds, organizations, events and other resources supporting the Black community at the city, state/provincial, and national levels. Please continue to add to the list by submitting a resource.</p>
                         <div className="btn-wrapper">
                             <button className="btn btn-full" onClick={this.triggerScroll}>Explore Actions</button>
                             <Form />
