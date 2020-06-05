@@ -2,6 +2,7 @@ import React from 'react';
 import Select from 'react-select';
 
 const options = [
+    { value: '', label: 'All'},
     { value: 'event', label: 'Events' },
     { value: 'fund', label: 'Funds' },
     { value: 'organization', label: 'Organizations' },

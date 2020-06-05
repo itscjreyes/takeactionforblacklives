@@ -31,11 +31,12 @@ const customStyles = {
         ...provided,
         background: 'white',
         boxShadow: '0 5px 15px rgba(0,0,0,0.05)',
-        borderRadius: '30px'
+        borderRadius: '30px',
+        overflow: 'hidden'
     }),
     menuList: (provided) => ({
         ...provided,
-        padding: '0'
+        padding: '0',
     })
   }
 
