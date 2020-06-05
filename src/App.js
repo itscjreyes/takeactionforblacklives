@@ -71,7 +71,7 @@ class App extends Component {
     }
 
     return (
-      <div class="app">
+      <div className="app">
         <Header />
         <FiltersWrapper 
           location={location}

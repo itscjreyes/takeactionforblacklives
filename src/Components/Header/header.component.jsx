@@ -30,12 +30,14 @@ class Header extends Component {
             const topLeft = document.querySelector('.top-left');
             const bottomLeft = document.querySelector('.bottom-left');
             const bottomRight = document.querySelector('.bottom-right');
+            const title = document.querySelector('.header-title');
 
             if (pos > 0 && window.innerWidth > 767) {
                 topRight.style.transform = `translate(0,-${pos * 2.2}px)`;
                 topLeft.style.transform = `translate(0,-${pos}px)`;
                 bottomLeft.style.transform = `translate(0,-${pos / 1.5}px)`;
                 bottomRight.style.transform = `translate(0,-${pos * 1.8}px)`;
+                title.style.transform = `translate(0,-${pos * 0.2}px)`;
             }
         })
     }
@@ -68,7 +70,7 @@ class Header extends Component {
                         alt=''
                         aria-hidden="true"
                     />
-                    <h1 className="lazyload">Take Action&nbsp;for Black Lives</h1>
+                    <h1 className="lazyload header-title">Take Action&nbsp;for Black Lives</h1>
                     <div className="content-wrapper lazyload">
                         <p>There is a lot of information out there. This site is an attempt to compile a list of petitions, funds, organizations, events and other resources supporting the Black community at the city, state/provincial, and national levels. Please continue to add to the list by submitting a resource.</p>
                         <div className="btn-wrapper">
