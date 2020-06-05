@@ -129,7 +129,7 @@ class Form extends Component {
                                         <MenuItem value="fund">Fund</MenuItem>
                                         <MenuItem value="organization">Organization</MenuItem>
                                         <MenuItem value="petition">Petition</MenuItem>
-                                        <MenuItem value="other">Other</MenuItem>
+                                        <MenuItem value="resource">Other Resource</MenuItem>
                                     </Select>
                                 </FormControl>
                                 <TextField 
