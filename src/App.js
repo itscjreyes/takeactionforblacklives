@@ -7,6 +7,7 @@ import Header from './Components/Header/header.component';
 import { Loader } from './Components/Loader/loader.component';
 import { LocationTitle } from './Components/Location-Title/location-title.component';
 import Footer from './Components/Footer/footer.component';
+import ArrowUp from './Components/Arrow-Up/arrow-up.component';
 
 class App extends Component {
   constructor(){
@@ -93,6 +94,7 @@ class App extends Component {
           />
         }
         <Footer />
+        <ArrowUp />
       </div>
     )
   }

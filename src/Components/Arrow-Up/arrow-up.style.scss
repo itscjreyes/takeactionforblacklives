@@ -1,0 +1,49 @@
+.floating-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    background: $black;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &.true {
+        opacity: 0.5;
+        visibility: visible;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .floating-btn {
+        width: 60px;
+        height: 60px;
+        bottom: 25px;
+        right: 25px;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        &.true {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
