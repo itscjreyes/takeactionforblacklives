@@ -72,7 +72,7 @@ class Header extends Component {
                     />
                     <h1 className="lazyload header-title">Take Action&nbsp;for Black Lives</h1>
                     <div className="content-wrapper lazyload">
-                        <p>There is a lot of information out there. This site is an attempt to compile a growing list of petitions, funds, organizations, events and other resources supporting the Black community at the city, state/provincial, and national levels. Please continue to add to the list by submitting a resource.</p>
+                        <p>There is a lot of information out there. This site aims to compile a growing list of petitions, funds, organizations, events and other resources supporting the Black community at the city, state/provincial, and national levels. Please continue to add to the list by submitting a resource.</p>
                         <div className="btn-wrapper">
                             <button className="btn btn-full" onClick={this.triggerScroll}>Explore Actions</button>
                             <Form />

@@ -7,7 +7,7 @@ const options = [
     { value: 'fund', label: 'Funds' },
     { value: 'organization', label: 'Organizations' },
     { value: 'petition', label: 'Petitions' },
-    { value: 'other', label: 'Other Resources' },
+    { value: 'resource', label: 'Other Resources' },
 ]
 
 export const TypeFilter = props => {
